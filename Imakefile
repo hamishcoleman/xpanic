@@ -1,0 +1,8 @@
+        DEPLIBS = $(DEPXLIB)
+LOCAL_LIBRARIES = $(XLIB)
+           SRCS = xpanic.c
+           OBJS = xpanic.o
+
+             CC = cc
+
+ComplexProgramTarget(xpanic)

@@ -1,0 +1,74 @@
+.TH "XPANIC" "1"
+.SH NAME
+xpanic \- popup every now and again and relax you
+.SH SYNOPSIS
+.B xpanic
+[
+.BI "\-scale " factor
+] [
+.BI "\-delay " msecs
+] [
+.BI "\-sleep " secs
+] [
+.BI "\-geometry +" xoff "+" yoff
+] [
+.B "\-root"
+] [
+.B "\-random"
+] [
+.BI "\-boo " factor
+] [
+.BI "\-display " display
+]
+.SH DESCRIPTION
+.I Xpanic
+is an X client that pops up a window every now and again with a
+soothing message or picture to make you relax.
+.SH OPTIONS
+The following options can be given either on the command line as
+indicated or in the resource database (omitting the dash; the program
+has name
+.B xpanic
+and class
+.BR XPanic ")."
+.TP
+.BI "\-scale " factor
+scale factor for the window size (default is 1.0).
+.TP
+.BI "\-delay " msecs
+millisecond delay between flashes (default is 150).
+.TP
+.BI "\-sleep " secs
+average seconds that the window goes away for (default is 300).
+.TP
+.BI "\-uptime " secs
+number of seconds window is there for (default is 3.0).
+.TP
+.BI "\-geometry +" xoff "+" yoff
+location of the window (default is +100+100).
+.TP
+.B "\-root"
+runs on the screen background (default is to run as separate window).
+.TP
+.B "\-random"
+pop up at random locations (default is to always appear at same location).
+.TP
+.BI "\-boo " factor
+proportion of smiley green ball pictures to don't panic messages
+(default is 0.5, giving half of each)
+.TP
+.BI "\-display " display
+relax user on specified display.
+.SH "ENVIRONMENT VARIABLES"
+.IP HOME
+Home directory used to locate
+.I ".Xdefaults"
+file.
+.IP DISPLAY
+Default display.
+.SH FILES
+.IP ".Xdefaults"
+Merged with the resource database.
+.SH "AUTHOR"
+Robin Humble,
+.IR rjh@pixel.maths.monash.edu.au .

@@ -1,0 +1,25 @@
+Xpanic is a small program in the tradition of a certain guide to the
+galaxy that pops up with a soothing message in large friendly letters
+every now and again to relax you...
+
+The program is tentatively (c) Robin Humble <rjh@pixel.maths.monash.edu.au>.
+Feel free to mail me with any suggestions for improvements or bugs.
+
+COMPILATION
+-----------
+EITHER just compile with `cc -O xpanic.c -lX11 -o xpanic' where `cc'
+must be an ANSI C compiler,
+
+OR modify the included Imakefile such that CC is defined as an ANSI C
+compiler (e.g., gcc) and then run `xmkmf' and `make xpanic'.
+
+INSTALLATION
+------------
+Move `xpanic' to where you normally keep binaries and `xpanic.man' to
+where you normally keep manual pages for diversions like this.
+
+ACKNOWLEDGMENTS
+---------------
+To Douglas Adams <dna@dadams.demon.co.uk> for obvious reasons and
+quite a lot of entertainment.
+To Kristoffer Rose <kris@diku.dk> for adding documentation to all this.
