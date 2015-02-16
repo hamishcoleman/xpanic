@@ -253,8 +253,8 @@ double tim(void) {
   double t;
 
   gettimeofday(&tp, NULL);
-  t = (float)(tp.tv_sec - 749174000) + 0.0000001*(float)(tp.tv_usec);
-
+  t = tp.tv_sec;
+  t+= (float)tp.tv_usec*0.000001;
   return (t);
 }
 
