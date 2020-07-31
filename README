@@ -7,10 +7,12 @@ Feel free to mail me with any suggestions for improvements or bugs.
 
 COMPILATION
 -----------
-EITHER just compile with `cc -O xpanic.c -lX11 -o xpanic' where `cc'
-must be an ANSI C compiler,
+On a modern system, with the X11 development libraries installed, just
+compile with "make".  On Debian systems the X11 development libraries are
+in the package "libx11-dev", which can be installed with "make build-deps"
 
-OR modify the included Imakefile such that CC is defined as an ANSI C
+The original Imakefile is present, but xmkmf is not used on modern systems.
+If needed modify the included Imakefile such that CC is defined as an ANSI C
 compiler (e.g., gcc) and then run `xmkmf' and `make xpanic'.
 
 INSTALLATION
