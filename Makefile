@@ -1,6 +1,6 @@
 
 PROGS := xpanic
-CFLAGS := -lX11
+LDLIBS := -lX11
 
 all: $(PROGS)
 
