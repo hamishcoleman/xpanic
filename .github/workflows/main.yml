@@ -1,0 +1,17 @@
+# CI config for https://github.com
+
+name: CI
+
+on: [push]
+
+jobs:
+    build:
+        name: make all
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v2
+            - name: Install dependencies
+              run: sudo make build-dep
+            - name: Build
+              run: make all
