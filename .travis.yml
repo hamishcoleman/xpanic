@@ -5,7 +5,7 @@ language: c
 
 install:
     - sudo apt-get update
-    - sudo make build-deps
+    - sudo make build-dep
 
 script:
     - make all
